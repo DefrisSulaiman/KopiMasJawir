@@ -88,14 +88,14 @@ const Hero = () => {
               <div className="text-center">
                 <div className="flex items-center gap-2 mb-2">
                   <Heart className="h-5 w-5" />
-                  <span className="text-2xl font-bold">1000+</span>
+                  <span className="text-2xl font-bold">20+</span>
                 </div>
                 <p className="text-sm opacity-80">Pelanggan Puas</p>
               </div>
               <div className="text-center">
                 <div className="flex items-center gap-2 mb-2">
                   <Coffee className="h-5 w-5" />
-                  <span className="text-2xl font-bold">50+</span>
+                  <span className="text-2xl font-bold">6</span>
                 </div>
                 <p className="text-sm opacity-80">Varian Kopi</p>
               </div>

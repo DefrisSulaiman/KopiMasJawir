@@ -17,25 +17,25 @@ const Advantages = () => {
     {
       icon: Truck,
       title: "Pengiriman Cepat",
-      description: "Dikirim fresh dalam 24 jam ke seluruh Indonesia",
+      description: "Dikirim fresh dalam 24 jam ke seluruh Sangatta",
       color: "text-purple-600"
     },
     {
       icon: Clock,
-      title: "Roasting Fresh",
+      title: " Fresh",
       description: "Disangrai fresh setiap hari untuk kesegaran maksimal",
       color: "text-orange-600"
     },
     {
       icon: Award,
       title: "Bersertifikat",
-      description: "Memiliki sertifikat internasional untuk kualitas premium",
+      description: "Adakah sertif nya",
       color: "text-yellow-600"
     },
     {
       icon: Star,
       title: "Rasa Autentik",
-      description: "Mempertahankan citarasa asli kopi Indonesia yang khas",
+      description: "Mempertahankan citarasa Jawir yang khas",
       color: "text-red-600"
     }
   ];

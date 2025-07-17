@@ -11,10 +11,10 @@ const Footer = () => {
   ];
 
   const products = [
-    { name: 'Kopi Arabika Premium', href: '#' },
-    { name: 'Kopi Robusta Strong', href: '#' },
-    { name: 'Kopi Luwak Special', href: '#' },
-    { name: 'Kopi Blend Signature', href: '#' },
+    { name: 'Kopi Hitam Mas Jawir', href: '#' },
+    { name: 'Kopi Susu Mas Guren', href: '#' },
+    { name: 'Mas Macho', href: '#' },
+    { name: 'Mas Cokro', href: '#' },
   ];
 
   const socialLinks = [
@@ -95,26 +95,26 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <div className="text-sm opacity-80">
-                  <p>Jl. Kopi Raya No. 123</p>
-                  <p>Jakarta Selatan 12345</p>
+                  <p>Jalan Bundaran Patung Singa</p>
+                  <p>Sangatta, Kutai Timur</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                <span className="text-sm opacity-80">(021) 1234-5678</span>
+                <span className="text-sm opacity-80">nomore sopo</span>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                <span className="text-sm opacity-80">info@kopimasjawir.com</span>
+                <span className="text-sm opacity-80">kada tau</span>
               </div>
               
               <div className="flex items-start space-x-3">
                 <Clock className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <div className="text-sm opacity-80">
-                  <p>Sen-Sab: 08:00 - 20:00</p>
-                  <p>Minggu: 09:00 - 18:00</p>
+                  <p>Sebukanya</p>
+                  <p></p>
                 </div>
               </div>
             </div>

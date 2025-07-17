@@ -6,22 +6,22 @@ const About = () => {
     {
       icon: Coffee,
       title: "Kualitas Premium",
-      description: "Hanya biji kopi terbaik yang dipilih untuk menghasilkan citarasa yang luar biasa."
+      description: "apa ya"
     },
     {
       icon: Users,
-      title: "Komunitas Petani",
-      description: "Mendukung petani lokal dengan memberikan harga yang adil dan berkelanjutan."
+      title: "Komunitas Darsa",
+      description: "apa ya"
     },
     {
       icon: Award,
-      title: "Pengalaman Bertahun-tahun",
-      description: "Lebih dari 20 tahun pengalaman dalam dunia kopi Indonesia."
+      title: "Pengalaman Berhari-hari",
+      description: "apa ya"
     },
     {
       icon: Heart,
       title: "Dibuat dengan Cinta",
-      description: "Setiap proses dilakukan dengan penuh perhatian dan dedikasi."
+      description: "apa ya"
     }
   ];
 
