@@ -52,7 +52,7 @@ const ProductCard = ({
           <span className="text-sm text-muted-foreground ml-1">({rating}.0)</span>
         </div>
 
-        <h3 className="font-bold text-lg mb-2">{name}</h3>
+        <h3 className="font-custom text-lg mb-2">{name}</h3>
         <p className="text-muted-foreground text-sm mb-3 line-clamp-2">
           {description}
         </p>
@@ -66,13 +66,6 @@ const ProductCard = ({
           )}
         </div>
       </CardContent>
-
-      <CardFooter className="p-4 pt-0">
-        <Button className="w-full hover-scale">
-          <ShoppingCart className="mr-2 h-4 w-4" />
-          Tambah ke Keranjang
-        </Button>
-      </CardFooter>
     </Card>
   );
 };

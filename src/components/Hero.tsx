@@ -3,12 +3,12 @@ import { Coffee, Award, Heart } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-16 min-h-screen flex items-center coffee-gradient">
+    <section id="home" className="pt-16 min-h-screen flex items-center coffee-hero px-12">
       <div className="container mx-auto px-4 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-white space-y-6 fade-in-up">
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold font-custom leading-tight">
               Kopi Mas Jawir
               <span className="block text-2xl md:text-3xl font-normal mt-2">
                 Nikmatnya Kopi Asli Indonesia
@@ -21,13 +21,59 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" variant="secondary" className="hover-scale">
-                <Coffee className="mr-2 h-5 w-5" />
-                Pesan Sekarang
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary hover-scale">
-                Lihat Produk
-              </Button>
+<a href="#contact">
+  <Button
+  size="lg"
+  variant="outline"
+  className="
+    relative
+    overflow-hidden
+    border-white text-white
+    hover:text-[hsl(var(--coffee-dark))]
+    z-10
+    before:content-['']
+    before:absolute
+    before:inset-0
+    before:bg-white
+    before:scale-y-0
+    before:origin-bottom
+    before:transition-transform
+    before:duration-300
+    hover:before:scale-y-100
+  "
+>
+<span className="relative z-20 transition-colors duration-300 flex items-center">
+  <Coffee className="mr-2 h-5 w-5" /> 
+  Pesan Sekarang
+</span>
+</Button>
+</a>
+<a href="#products">
+  <Button
+  size="lg"
+  variant="outline"
+  className="
+    relative
+    overflow-hidden
+    border-white text-white
+    hover:text-[hsl(var(--coffee-dark))]
+    z-10
+    before:content-['']
+    before:absolute
+    before:inset-0
+    before:bg-white
+    before:scale-y-0
+    before:origin-bottom
+    before:transition-transform
+    before:duration-300
+    hover:before:scale-y-100
+  "
+>
+  <span className="relative z-20 transition-colors duration-300">
+    Lihat Produk
+  </span>
+</Button>
+</a>
             </div>
 
             {/* Stats */}

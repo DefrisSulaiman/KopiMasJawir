@@ -66,14 +66,14 @@ const BlogCarousel = () => {
   };
 
   return (
-    <section id="blog" className="py-20 bg-background">
+    <section id="blog" className="py-20 coffee-about px-12">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center mb-12 fade-in-up">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-custom mb-4">
               Blog & Artikel
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="dark-color text-lg">
               Pelajari lebih dalam tentang dunia kopi bersama para ahli
             </p>
           </div>

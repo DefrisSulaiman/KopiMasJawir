@@ -41,10 +41,10 @@ const Advantages = () => {
   ];
 
   return (
-    <section id="advantages" className="py-20 bg-background">
+    <section id="advantages" className="py-20 bg-background px-12">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 fade-in-up">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-custom mb-4">
             Keunggulan Kopi Mas Jawir
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -83,7 +83,7 @@ const Advantages = () => {
         {/* CTA Section */}
         <div className="mt-16 text-center fade-in-up">
           <div className="bg-primary/5 rounded-2xl p-8 md:p-12">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            <h3 className="text-2xl md:text-3xl font-custom mb-4">
               Siap Merasakan Perbedaannya?
             </h3>
             <p className="text-muted-foreground text-lg mb-6 max-w-lg mx-auto">

@@ -7,100 +7,95 @@ All colors MUST be HSL.
 */
 
 @layer base {
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @font-face {
+    font-family: 'Darling';
+    src: url('/fonts/DarlingCoffee.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+  }
+
+    @font-face {
+    font-family: 'Mont';
+    src: url('/fonts/Montserrat-Regular.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+  }
+
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Palette Utama */
+    --coffee-dark: 30 30% 22%;    /* #493628 */
+    --coffee-medium: 25 28% 55%;  /* #AB886D */
+    --coffee-light: 22 33% 78%;   /* #D6C0B3 */
+    --cream-neutral: 340 8% 88%;  /* #E4E0E1 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 25 95% 53%;
-    --primary-foreground: 210 40% 98%;
-    --primary-glow: 35 100% 65%;
-
-    --secondary: 22 84% 20%;
-    --secondary-foreground: 210 40% 98%;
+    /* Tema Light (Default) */
+    --background: var(--cream-neutral);
+    --foreground: var(--coffee-dark);
     
-    --coffee-brown: 25 45% 35%;
-    --coffee-light: 35 55% 85%;
-    --warm-cream: 45 100% 95%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
+    --card: var(--cream-neutral);
+    --card-foreground: var(--coffee-dark);
+    
+    --popover: var(--cream-neutral);
+    --popover-foreground: var(--coffee-dark);
+    
+    --primary: var(--coffee-medium);
+    --primary-foreground: var(--cream-neutral);
+    --primary-glow: var(--coffee-light);
+    
+    --secondary: var(--coffee-dark);
+    --secondary-foreground: var(--cream-neutral);
+    
+    --muted: 22 33% 85%; /* Versi lebih terang dari --coffee-light */
+    --muted-foreground: var(--coffee-medium);
+    
+    --accent: var(--coffee-light);
+    --accent-foreground: var(--coffee-dark);
+    
+    --destructive: 0 62% 50%; /* Merah untuk kontras */
+    --destructive-foreground: var(--cream-neutral);
+    
+    --border: var(--coffee-light);
+    --input: var(--coffee-light);
+    --ring: var(--coffee-medium);
+    
     --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 25 95% 53%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --primary-glow: 35 100% 65%;
-
-    --secondary: 22 84% 20%;
-    --secondary-foreground: 210 40% 98%;
+    /* Tema Dark (Disesuaikan dengan palette) */
+    --background: var(--coffee-dark);
+    --foreground: var(--cream-neutral);
     
-    --coffee-brown: 25 45% 35%;
-    --coffee-light: 35 55% 85%;
-    --warm-cream: 45 100% 95%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --card: var(--coffee-dark);
+    --card-foreground: var(--cream-neutral);
+    
+    --popover: var(--coffee-dark);
+    --popover-foreground: var(--cream-neutral);
+    
+    --primary: var(--coffee-medium);
+    --primary-foreground: var(--coffee-dark);
+    --primary-glow: var(--coffee-light);
+    
+    --secondary: var(--coffee-light);
+    --secondary-foreground: var(--coffee-dark);
+    
+    --muted: 30 30% 15%; /* Versi lebih gelap dari --coffee-dark */
+    --muted-foreground: var(--coffee-light);
+    
+    --accent: var(--coffee-medium);
+    --accent-foreground: var(--cream-neutral);
+    
+    --destructive: 0 62% 30%; /* Merah lebih gelap */
+    --destructive-foreground: var(--cream-neutral);
+    
+    --border: var(--coffee-medium);
+    --input: var(--coffee-medium);
+    --ring: var(--coffee-light);
   }
 }
 
@@ -121,6 +116,44 @@ All colors MUST be HSL.
   .coffee-section {
     background: linear-gradient(180deg, hsl(var(--warm-cream)), hsl(var(--coffee-light)));
   }
+
+  .coffee-hero {
+    background: hsl(var(--coffee-dark));
+  }
+
+  .coffee-products {
+    background: hsl(var(--coffee-medium));
+  }
+
+  .coffee-about {
+    background: hsl(var(--coffee-light));
+  }
+
+  .coffee-cta {
+    background: hsl(var(--cream-neutral));
+  }
+
+  .coffee-testimonials {
+    background: hsl(var(--primary));
+  }
+
+  .dark-color {
+    color: hsl(var(--coffee-dark));
+  }
+
+  .medium-color {
+    color: hsl(var(--coffee-medium));
+  }
+
+  .light-color {
+    color: hsl(var(--coffee-light));
+  }
+
+  .neutral-color {
+    color: hsl(var(--cream-neutral));
+  }
+  
+  
   
   .hover-scale {
     @apply transition-transform duration-300 hover:scale-105;

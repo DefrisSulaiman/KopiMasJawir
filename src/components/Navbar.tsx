@@ -9,14 +9,11 @@ const Navbar = () => {
     { name: 'Beranda', href: '#home' },
     { name: 'Tentang', href: '#about' },
     { name: 'Produk', href: '#products' },
-    { name: 'Keunggulan', href: '#advantages' },
-    { name: 'Testimoni', href: '#testimonials' },
-    { name: 'Blog', href: '#blog' },
     { name: 'Kontak', href: '#contact' },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b shadow-sm px-12">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}

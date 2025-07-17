@@ -48,13 +48,13 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20 coffee-section">
+    <section id="testimonials" className="py-20 coffee-products px-12">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 fade-in-up">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-5xl font-custom mb-4 light-color">
             Kata Mereka Tentang Kami
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="neutral-color text-lg max-w-2xl mx-auto">
             Dengarkan pengalaman nyata dari ribuan pelanggan yang telah 
             merasakan kualitas premium Kopi Mas Jawir.
           </p>

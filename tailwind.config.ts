@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				custom: ['Darling', 'sans-serif'],    // Untuk teks biasa
+       			sans: ['Mont', 'serif'], // Untuk heading
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

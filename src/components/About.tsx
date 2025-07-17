@@ -26,9 +26,9 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 coffee-section">
+    <section id="about" className="py-20 coffee-about">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center px-12">
           {/* Image */}
           <div className="relative fade-in-up">
             <img
@@ -39,7 +39,7 @@ const About = () => {
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary rounded-full flex items-center justify-center shadow-xl">
               <div className="text-white text-center">
                 <Coffee className="h-8 w-8 mx-auto mb-1" />
-                <span className="text-sm font-bold">20+ Tahun</span>
+                <span className="text-sm font-bold">1+ Bulan</span>
               </div>
             </div>
           </div>
@@ -47,21 +47,17 @@ const About = () => {
           {/* Content */}
           <div className="space-y-6 fade-in-up">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl font-custom mb-4">
                 Tentang Kopi Mas Jawir
               </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                Kopi Mas Jawir adalah usaha keluarga yang telah berdedikasi selama lebih dari 20 tahun 
-                dalam menghadirkan kopi Indonesia terbaik. Kami berkomitmen untuk melestarikan tradisi 
-                kopi nusantara sambil menghadirkan inovasi dalam setiap sajian.
+              <p className="dark-color text-lg leading-relaxed ">
+                apa ya
               </p>
             </div>
 
             <div>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Perjalanan kami dimulai dari kecintaan terhadap kopi asli Indonesia. Dari perkebunan 
-                hingga cangkir Anda, setiap tahap diawasi dengan ketat untuk memastikan kualitas terbaik. 
-                Kami bangga menjadi bagian dari cerita kopi Indonesia yang kaya akan tradisi dan cita rasa.
+              <p className="dark-color leading-relaxed mb-6">
+                apa ya
               </p>
 
               <Button size="lg" className="hover-scale">
@@ -72,8 +68,8 @@ const About = () => {
         </div>
 
         {/* Values Section */}
-        <div className="mt-20">
-          <h3 className="text-2xl md:text-3xl font-bold text-center mb-12">
+        <div className="mt-20 px-12">
+          <h3 className="text-2xl md:text-3xl font-custom text-center mb-12">
             Nilai-Nilai Kami
           </h3>
           

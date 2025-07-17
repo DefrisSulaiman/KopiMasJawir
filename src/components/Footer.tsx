@@ -25,7 +25,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-secondary text-secondary-foreground">
+    <footer className="bg-secondary text-secondary-foreground px-12">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -35,8 +35,7 @@ const Footer = () => {
               <span className="font-bold text-xl">Kopi Mas Jawir</span>
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
-              Menghadirkan kopi premium Indonesia dengan cita rasa autentik dan kualitas terbaik. 
-              Dari perkebunan hingga cangkir Anda, kami pastikan setiap tegukan adalah pengalaman istimewa.
+              bingung.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => {

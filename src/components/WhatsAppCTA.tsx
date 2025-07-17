@@ -8,25 +8,25 @@ const WhatsAppCTA = () => {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <section id="contact" className="py-20 coffee-gradient">
+    <section id="contact" className="py-20 coffee-cta">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center text-white">
           <div className="fade-in-up">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-custom mb-6 dark-color">
               Siap Memesan Kopi Premium Kami?
             </h2>
-            <p className="text-lg md:text-xl opacity-90 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl opacity-90 mb-8 max-w-2xl mx-auto medium-color">
               Hubungi kami sekarang juga untuk konsultasi gratis dan dapatkan penawaran 
               terbaik untuk kopi pilihan Anda!
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-1 gap-8 mb-12">
             {/* WhatsApp CTA */}
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 fade-in-up">
+            <div className="coffee-hero backdrop-blur-md rounded-2xl p-8 fade-in-up">
               <MessageCircle className="h-16 w-16 mx-auto mb-4 text-green-400" />
-              <h3 className="text-xl font-bold mb-3">Chat WhatsApp</h3>
-              <p className="opacity-90 mb-6">
+              <h3 className="text-xl font-bold mb-3 light-color">Chat WhatsApp</h3>
+              <p className="opacity-90 mb-6 medium-color">
                 Respon cepat untuk konsultasi dan pemesanan langsung
               </p>
               <Button
@@ -38,28 +38,10 @@ const WhatsAppCTA = () => {
                 Chat Sekarang
               </Button>
             </div>
-
-            {/* Phone CTA */}
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 fade-in-up">
-              <Phone className="h-16 w-16 mx-auto mb-4 text-blue-400" />
-              <h3 className="text-xl font-bold mb-3">Telepon Langsung</h3>
-              <p className="opacity-90 mb-6">
-                Bicara langsung dengan tim customer service kami
-              </p>
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full border-white text-white hover:bg-white hover:text-primary"
-                onClick={() => window.open('tel:+6281234567890', '_self')}
-              >
-                <Phone className="mr-2 h-5 w-5" />
-                (021) 1234-5678
-              </Button>
-            </div>
           </div>
 
           {/* Contact Info */}
-          <div className="grid md:grid-cols-3 gap-6 fade-in-up">
+          <div className="grid md:grid-cols-3 gap-6 fade-in-up medium-color">
             <div className="text-center">
               <Clock className="h-8 w-8 mx-auto mb-3 opacity-80" />
               <h4 className="font-semibold mb-2">Jam Operasional</h4>
