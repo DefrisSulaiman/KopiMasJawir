@@ -46,8 +46,7 @@ const WhatsAppCTA = () => {
               <Clock className="h-8 w-8 mx-auto mb-3 opacity-80" />
               <h4 className="font-semibold mb-2">Jam Operasional</h4>
               <p className="text-sm opacity-80">
-                Senin - Sabtu: 08:00 - 20:00<br />
-                Minggu: 09:00 - 18:00
+                Sebukanya
               </p>
             </div>
             
@@ -55,8 +54,8 @@ const WhatsAppCTA = () => {
               <MapPin className="h-8 w-8 mx-auto mb-3 opacity-80" />
               <h4 className="font-semibold mb-2">Lokasi Toko</h4>
               <p className="text-sm opacity-80">
-                Jl. Kopi Raya No. 123<br />
-                Jakarta Selatan 12345
+                Jalan Bundaran Patung Singa <br />
+                Sangatta, Kutai Timur
               </p>
             </div>
             

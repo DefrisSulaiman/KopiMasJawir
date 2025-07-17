@@ -2,12 +2,14 @@ import { useState } from 'react';
 import { ChevronLeft, ChevronRight, Calendar, User, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const BlogCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const blogPosts = [
     {
+      id: "1",
       title: "Sejarah Kopi Indonesia: Dari Kolonial Hingga Modern",
       excerpt: "Perjalanan panjang kopi Indonesia dari masa kolonial Belanda hingga menjadi salah satu produsen kopi terbaik di dunia.",
       image: "/placeholder.svg",
@@ -16,6 +18,7 @@ const BlogCarousel = () => {
       category: "Sejarah"
     },
     {
+      id: "2",
       title: "Tips Menyeduh Kopi yang Sempurna di Rumah",
       excerpt: "Panduan lengkap untuk menyeduh kopi yang nikmat di rumah dengan peralatan sederhana yang mudah didapat.",
       image: "/placeholder.svg",
@@ -24,6 +27,7 @@ const BlogCarousel = () => {
       category: "Tutorial"
     },
     {
+      id: "3",
       title: "Perbedaan Arabika dan Robusta: Mana yang Cocok untuk Anda?",
       excerpt: "Mengenal karakteristik unik dari kedua jenis kopi ini dan bagaimana memilih yang sesuai dengan selera Anda.",
       image: "/placeholder.svg",
@@ -32,6 +36,7 @@ const BlogCarousel = () => {
       category: "Edukasi"
     },
     {
+      id: "4",
       title: "Perkebunan Kopi Organik: Masa Depan Industri Kopi",
       excerpt: "Bagaimana metode organik tidak hanya menghasilkan kopi berkualitas tinggi tapi juga ramah lingkungan.",
       image: "/placeholder.svg",
@@ -40,6 +45,7 @@ const BlogCarousel = () => {
       category: "Lingkungan"
     },
     {
+      id: "5",
       title: "Kopi Luwak: Mitos dan Fakta di Balik Kopi Termahal",
       excerpt: "Mengungkap kebenaran di balik kopi luwak, proses pembuatannya, dan mengapa harganya begitu tinggi.",
       image: "/placeholder.svg",
@@ -146,10 +152,12 @@ const BlogCarousel = () => {
                             {post.excerpt}
                           </p>
 
-                          <Button variant="ghost" className="p-0 h-auto font-semibold text-primary hover:bg-transparent">
-                            Baca Selengkapnya
-                            <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                          </Button>
+                          <Link to={`/blog/${post.id}`}>
+                            <Button variant="ghost" className="p-0 h-auto font-semibold text-primary hover:bg-transparent">
+                              Baca Selengkapnya
+                              <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                            </Button>
+                          </Link>
                         </CardContent>
                       </Card>
                     ))}
